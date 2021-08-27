@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #3b5998;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Principal.Ventanas.AdminNuevoRegistroController">
+   <children>
+      <Label layoutX="60.0" layoutY="67.0" style="-fx-font-size: 20;" text="Nuevo Turno">
+         <effect>
+            <ColorAdjust brightness="1.0" />
+         </effect>
+      </Label>
+      <Line endX="593.0" layoutX="175.0" layoutY="103.0" startX="-114.0" strokeWidth="3.0" AnchorPane.bottomAnchor="395.5" AnchorPane.leftAnchor="59.5" AnchorPane.rightAnchor="30.5" AnchorPane.topAnchor="101.5" />
+      <Label layoutX="60.0" layoutY="110.0" style="-fx-font-size: 16;" text="Turno número:">
+         <effect>
+            <ColorAdjust brightness="1.0" />
+         </effect>
+      </Label>
+      <Label fx:id="numeroTurno" layoutX="169.0" layoutY="110.0" style="-fx-font-size: 16;" text="000">
+         <effect>
+            <ColorAdjust brightness="1.0" />
+         </effect>
+      </Label>
+      <Label layoutX="521.0" layoutY="113.0" style="-fx-font-size: 16;" text="Fecha:">
+         <effect>
+            <ColorAdjust brightness="1.0" />
+         </effect>
+      </Label>
+      <DatePicker fx:id="tFecha" editable="false" layoutX="579.0" layoutY="110.0" promptText="Seleccione fecha" style="-fx-background-color: #C9c9c9;">
+         <effect>
+            <ColorAdjust />
+         </effect>
+      </DatePicker>
+      <Label layoutX="549.0" layoutY="314.0" style="-fx-font-size: 16;" text="H. Turno:">
+         <effect>
+            <ColorAdjust brightness="1.0" />
+         </effect>
+      </Label>
+      <Label layoutX="503.0" layoutY="350.0" prefHeight="25.0" prefWidth="127.0" style="-fx-font-size: 16;" text="H. Salida Turno:">
+         <effect>
+            <ColorAdjust brightness="1.0" />
+         </effect>
+      </Label>
+      <Button fx:id="registrarTurno" defaultButton="true" layoutX="144.0" layoutY="432.0" mnemonicParsing="false" onAction="#apretarRegistrar" prefHeight="45.0" prefWidth="200.0" style="-fx-background-color: #b71c1c; -fx-font-size: 18;" />
+      <Label layoutX="61.0" layoutY="142.0" prefHeight="25.0" prefWidth="68.0" style="-fx-font-size: 16;" text="Nombre:">
+         <effect>
+            <ColorAdjust brightness="1.0" />
+         </effect>
+      </Label>
+      <Label layoutX="61.0" layoutY="182.0" style="-fx-font-size: 16;" text="Apellido:">
+         <effect>
+            <ColorAdjust brightness="1.0" />
+         </effect>
+      </Label>
+      <Label layoutX="61.0" layoutY="222.0" style="-fx-font-size: 16;" text="Dni:">
+         <effect>
+            <ColorAdjust brightness="1.0" />
+         </effect>
+      </Label>
+      <Label layoutX="61.0" layoutY="262.0" style="-fx-font-size: 16;" text="Edad:">
+         <effect>
+            <ColorAdjust brightness="1.0" />
+         </effect>
+      </Label>
+      <Label layoutX="61.0" layoutY="302.0" style="-fx-font-size: 16;" text="Teléfono:">
+         <effect>
+            <ColorAdjust brightness="1.0" />
+         </effect>
+      </Label>
+      <Label layoutX="61.0" layoutY="342.0" prefHeight="25.0" prefWidth="81.0" style="-fx-font-size: 16;" text="Dirección:">
+         <effect>
+            <ColorAdjust brightness="1.0" />
+         </effect>
+      </Label>
+      <Label layoutX="61.0" layoutY="382.0" prefHeight="25.0" prefWidth="96.0" style="-fx-font-size: 16;" text="Especialidad:">
+         <effect>
+            <ColorAdjust brightness="1.0" />
+         </effect>
+      </Label>
+      <TextField fx:id="tNombre" layoutX="167.0" layoutY="142.0" prefHeight="26.0" prefWidth="171.0" />
+      <TextField fx:id="tApellido" layoutX="167.0" layoutY="182.0" prefHeight="26.0" prefWidth="171.0" />
+      <TextField fx:id="tDni" layoutX="167.0" layoutY="221.0" prefHeight="26.0" prefWidth="171.0" />
+      <TextField fx:id="tEdad" layoutX="168.0" layoutY="262.0" prefHeight="26.0" prefWidth="171.0" />
+      <TextField fx:id="tTelefono" layoutX="169.0" layoutY="301.0" prefHeight="26.0" prefWidth="171.0" />
+      <TextField fx:id="tDireccion" layoutX="168.0" layoutY="342.0" prefHeight="26.0" prefWidth="253.0" />
+      <TextField fx:id="tEspecialidad" layoutX="167.0" layoutY="382.0" prefHeight="26.0" prefWidth="171.0" />
+      <Line endX="593.0" layoutX="166.0" layoutY="418.0" startX="-114.0" strokeWidth="3.0" AnchorPane.leftAnchor="59.5" AnchorPane.rightAnchor="30.5" />
+      <TextField fx:id="sHoraTurno" layoutX="625.0" layoutY="315.0" prefHeight="25.0" prefWidth="81.0" />
+      <TextField fx:id="sHoraSalidaTurno" layoutX="625.0" layoutY="350.0" prefHeight="25.0" prefWidth="81.0" />
+      <Label layoutX="555.0" layoutY="382.0" prefHeight="25.0" prefWidth="68.0" style="-fx-font-size: 16;" text="Importe:">
+         <effect>
+            <ColorAdjust brightness="1.0" />
+         </effect>
+      </Label>
+      <TextField fx:id="sImporte" layoutX="625.0" layoutY="385.0" prefHeight="25.0" prefWidth="81.0" />
+      <Label layoutX="181.0" layoutY="442.0" mouseTransparent="true" prefHeight="27.0" prefWidth="157.0" style="-fx-font-size: 18;" text="REGISTRAR TURNO">
+         <effect>
+            <ColorAdjust brightness="1.0" />
+         </effect>
+      </Label>
+      <ImageView fitHeight="30.0" fitWidth="26.0" layoutX="145.0" layoutY="443.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../imagenes/save.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="botonCancelar" cancelButton="true" layoutX="590.0" layoutY="436.0" mnemonicParsing="false" onAction="#apretarCancelar" prefHeight="37.0" prefWidth="103.0" style="-fx-background-color: #37474f;" />
+      <Label layoutX="608.0" layoutY="439.0" mouseTransparent="true" style="-fx-font-size: 18;" text="Cancelar" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="27.0" />
+         </font>
+         <effect>
+            <ColorAdjust />
+         </effect>
+      </Label>
+      <ImageView fitHeight="83.0" fitWidth="153.0" layoutX="343.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../imagenes/doc.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
